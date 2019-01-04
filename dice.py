@@ -3,7 +3,7 @@ import threading
 import time
 import logging
 
-number_of_users = 30
+number_of_users = 20    
 minimum_value = 1
 maximum_value = 6 
 
@@ -16,7 +16,6 @@ def my_calculation(minimum_value,maximum_value):
     var_result = random.randint(minimum_value,maximum_value)
     logging.debug('the function returned a value of : %d', var_result )
     logging.debug('Exiting my function service')
-
 # worker activity 
 def worker(minimum_value,maximum_value):
     logging.debug('Starting my worker process ')
